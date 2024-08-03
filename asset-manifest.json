@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ecomreact/static/css/main.63149dff.css",
+    "main.js": "/ecomreact/static/js/main.3a4ec01e.js",
+    "index.html": "/ecomreact/index.html",
+    "main.63149dff.css.map": "/ecomreact/static/css/main.63149dff.css.map",
+    "main.3a4ec01e.js.map": "/ecomreact/static/js/main.3a4ec01e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63149dff.css",
+    "static/js/main.3a4ec01e.js"
+  ]
+}
