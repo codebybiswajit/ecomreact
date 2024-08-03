@@ -13,7 +13,7 @@ export default function Navbar() {
                 <div className="container-fluid bg-dark">
                     <nav className="navbar navbar-expand-lg py-0 ">
                         <div className="container-fluid">
-                            <Link className="navbar-brand x" to="/">
+                            <Link className="navbar-brand x" to="/ecomreact/">
                                 <img src="https://codebybiswajit.github.io/secondportfolio/freelancer-biswajit-high-resolution-logo-transparent%20(1).png"
                                     alt="" srcSet="" width="148" className="img-fluid d-inline-block align-text-top" />
                             </Link>
