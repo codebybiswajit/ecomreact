@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ecomreact/static/css/main.63149dff.css",
-    "main.js": "/ecomreact/static/js/main.9bcf8321.js",
+    "main.js": "/ecomreact/static/js/main.f8a0d06a.js",
     "index.html": "/ecomreact/index.html",
     "main.63149dff.css.map": "/ecomreact/static/css/main.63149dff.css.map",
-    "main.9bcf8321.js.map": "/ecomreact/static/js/main.9bcf8321.js.map"
+    "main.f8a0d06a.js.map": "/ecomreact/static/js/main.f8a0d06a.js.map"
   },
   "entrypoints": [
     "static/css/main.63149dff.css",
-    "static/js/main.9bcf8321.js"
+    "static/js/main.f8a0d06a.js"
   ]
 }
