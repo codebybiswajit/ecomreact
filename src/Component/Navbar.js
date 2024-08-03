@@ -179,16 +179,16 @@ export default function Navbar() {
                                     <Link className='nav-item text-decoration-none' to='/ecomreact/home'>Home</Link>
                                 </li>
                                 <li>
-                                    <Link className='nav-item text-decoration-none' to='/about'>About</Link>
+                                    <Link className='nav-item text-decoration-none' to='/ecomreact/about'>About</Link>
                                 </li>
                                 <li>
-                                    <Link className='nav-item text-decoration-none' to='/products'>Products</Link>
+                                    <Link className='nav-item text-decoration-none' to='/ecomreact/products'>Products</Link>
                                 </li>
                                 <li>
-                                    <Link className='nav-item text-decoration-none' to='/blog'>Blogs</Link>
+                                    <Link className='nav-item text-decoration-none' to='/ecomreact/blog'>Blogs</Link>
                                 </li>
                                 <li>
-                                    <Link className='nav-item text-decoration-none' to='/contactus'>Contact Us</Link>
+                                    <Link className='nav-item text-decoration-none' to='/ecomreact/contactus'>Contact Us</Link>
                                 </li>
 
                             </ul>

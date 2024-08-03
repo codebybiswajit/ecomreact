@@ -25,10 +25,10 @@ export default function App() {
           <Route path="/ecomreact/home" element={<Home />} />
           <Route path="/ecomreact/" element={<Home />} />
           
-          <Route path="/about" element={<About />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/contactus" element={<Contactus />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/ecomreact/about" element={<About />} />
+          <Route path="/ecomreact/products" element={<Products />} />
+          <Route path="/ecomreact/contactus" element={<Contactus />} />
+          <Route path="/ecomreact/blog" element={<Blog />} />
         </Routes>
         <Footer />
       </BrowserRouter>
