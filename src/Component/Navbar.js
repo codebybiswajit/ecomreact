@@ -13,10 +13,10 @@ export default function Navbar() {
                 <div className="container-fluid bg-dark">
                     <nav className="navbar navbar-expand-lg py-0 ">
                         <div className="container-fluid">
-                            <a className="navbar-brand x" href="index.html">
+                            <Link className="navbar-brand x" to="/">
                                 <img src="https://codebybiswajit.github.io/secondportfolio/freelancer-biswajit-high-resolution-logo-transparent%20(1).png"
                                     alt="" srcSet="" width="148" className="img-fluid d-inline-block align-text-top" />
-                            </a>
+                            </Link>
 
                             <div className="collapse navbar-collapse " id="navbarNav">
                                 <ul className="navbar-nav me-auto  my-lg-0 navbar-nav-scroll">
@@ -35,11 +35,11 @@ export default function Navbar() {
                                                 All
                                             </button>
                                             <ul className="dropdown-menu dropdown-menu-black">
-                                                <li><a className="dropdown-item" href="#home">Home</a></li>
-                                                <li><a className="dropdown-item" href="#aboutus">About Us</a></li>
-                                                <li><a className="dropdown-item" href="#product">Products</a></li>
-                                                <li><a className="dropdown-item" href="#blog">Blogs</a></li>
-                                                <li><a className="dropdown-item" href="#cu">Contacts</a></li>
+                                                <li><a className="dropdown-item" href="/ecomreact/home">Home</a></li>
+                                                <li><a className="dropdown-item" href="/ecomreact/aboutus">About Us</a></li>
+                                                <li><a className="dropdown-item" href="/ecomreact/products">Products</a></li>
+                                                <li><a className="dropdown-item" href="/ecomreact/blog">Blogs</a></li>
+                                                <li><a className="dropdown-item" href="/ecomreact/contactus">Contacts</a></li>
                                             </ul>
                                         </span>
                                         <input type="text" className="form-control fc"
