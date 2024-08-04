@@ -14,24 +14,22 @@ export default function Home() {
         position: "relative",
         top: "30px"
     }
-    const [products, setProducts] = useState([])
-    const [isloading, setIsLoading] = useState(true)
-    useEffect(() => {
-        async function fetchData() {
-            try {
-                const response = await
-                    fetch('https://fakestoreapi.com/products?limit=4');
-                const data = await response.json();
-                // console.log(data)
-                setProducts(data);
-            } catch (error) {
-                console.log(error.message || 'Internal Server Error ' || 'Internet Connection Error ' || 'Api Response error');
-            } finally {
-                setIsLoading(false)
+    const [api, setApi] = useState([])
+    const [Loading, setLoading] = useState(true)
+    useEffect( ()=>
+        async function apiFetchData() {
+            try
+            {const response = await fetch('https://fakestoreapi.com/products?limit=4')
+                
+            const data = await response.json()
+            setApi(data)}catch(error){
+                console.log(error.message)
+            }finally{
+                setLoading(false)
             }
-        }
-        fetchData();
-    }, []);
+        
+        apiFetchData()}
+        , []);
 
 
     return (
@@ -87,20 +85,20 @@ export default function Home() {
                     <div className="container  glass " style={productStyle}>
                         <div className="row ">
                             {
-                                isloading ?
+                                Loading ?
                                     (<div className="d-flex justify-content-center position-absolute top-50 z-1">
                                         <div className="spinner-border text-primary d-flex justify-content-center " role="status">
                                             <span className="visually-hidden">Loading...</span>
                                         </div></div>)
                                 :
-                               ( products.map((product) => {
-                                    return <div className="col-sm-6  mt-5 pt-5 col-md-3 col-xs-12 mt-sm-3 mt-xs-1" style={cardStyle} key={product.id}>
+                               ( api.map((data) => {
+                                    return <div className="col-sm-6  mt-5 pt-5 col-md-3 col-xs-12 mt-sm-3 mt-xs-1" style={cardStyle} key={data.id}>
                                         <div className="card mt-5 w-auto">
-                                            <img src={product.image}
+                                            <img src={data.image}
                                                 className="card-img-top image-fluid" alt="..."  height={'300px'}/>
                                             <div className="card-body">
-                                                <h5 className="card-title">{product.title.slice(0,25)}</h5>
-                                                <p className="card-text">{product.description.slice(0,120)}...
+                                                <h5 className="card-title">{data.title.slice(0,25)}</h5>
+                                                <p className="card-text">{data.description.slice(0,120)}...
                                                 </p>
                                                 <Link to="/ecomreact/cart" className="btn btn-primary">Add to Cart</Link>
                                             </div>
