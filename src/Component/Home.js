@@ -18,7 +18,7 @@ export default function Home() {
     const [Loading, setLoading] = useState(true)
     useEffect( ()=>
         async function apiFetchData() {
-        {    try
+            try
             {const response = await fetch('https://fakestoreapi.com/products?limit=4')
             const data = await response.json()
             setApi(data)}catch(error){
@@ -26,7 +26,7 @@ export default function Home() {
             }finally{
                 setLoading(false)
             }
-        }
+        
         apiFetchData()}
         , [])
 
@@ -197,24 +197,24 @@ export default function Home() {
                         <div className="row">
                             <h1 className="text-center text-uppercase">&nbsp;👕👚🎽 Fashion Metamorphosis: Elevate Your Look! 👖🩳🩳</h1></div>
                         <div className="col-md-6 col-sm-6 col-sx-12 mb-2">
-                            <a href="#"><img
+                            <Link to="/"><img
                                 src="https://images.bewakoof.com/uploads/grid/app/720x420-Midsize-bannner-Combos--1--1704012294.jpg"
-                                alt="" srcSet="" className="image-fluid w-100" /></a>
+                                alt="" srcSet="" className="image-fluid w-100" /></Link>
                         </div>
                         <div className="col-md-6 col-sm-6 col-sx-12 mb-2">
-                            <a href="#"><img
+                            <Link to="/"><img
                                 src="https://images.bewakoof.com/uploads/grid/app/Official-Merch-store-Desktop-banner-1700470826-1701771559.webp"
-                                alt="" srcSet="" className="image-fluid w-100" /></a>
+                                alt="" srcSet="" className="image-fluid w-100" /></Link>
                         </div>
                         <div className="col-md-6 col-sm-6 col-sx-12 mb-2">
-                            <a href="#"><img
+                            <Link to="/"><img
                                 src="https://images.bewakoof.com/uploads/grid/app/Customise-Desktop-midsize-banner-1704439012.jpg"
-                                alt="" srcSet="" className="image-fluid w-100" /></a>
+                                alt="" srcSet="" className="image-fluid w-100" /></Link>
                         </div>
                         <div className="col-md-6 col-sm-6 col-sx-12 mb-2">
-                            <a href="#"><img
+                            <Link to="/"><img
                                 src="https://images.bewakoof.com/uploads/grid/app/Sizes-6xl-Plus-Size-Desktop-midsize-Banner-1706690349.jpg"
-                                alt="" srcSet="" className="image-fluid w-100" /></a>
+                                alt="" srcSet="" className="image-fluid w-100" /></Link>
                         </div>
                     </div>
                 </div>
@@ -222,17 +222,17 @@ export default function Home() {
                     <div className="row">
                         <div className="col-12 ">
                             <div className="member mb-2 mt-2 ms-3 " id="member">
-                                <a href="#"><img
+                                <Link to="/"><img
                                     src="https://images.bewakoof.com/uploads/grid/app/Desktop-Strip-3-1672040129.jpg"
-                                    alt="" srcSet="" className="img-fluid" /></a>
+                                    alt="" srcSet="" className="img-fluid" /></Link>
                             </div>
                         </div>
                         <div className="col-12 ">
                             <div className="row">
                                 <div className="vote mb-2 mt-2 ms-3 " id="vote">
-                                    <a href="#"><img
+                                    <Link to="/"><img
                                         src="https://images.bewakoof.com/uploads/grid/app/Desktop-Strip-3-1669022420.jpg"
-                                        alt="" srcSet="" className="img-fluid" /></a>
+                                        alt="" srcSet="" className="img-fluid" /></Link>
 
                                 </div>
                             </div>

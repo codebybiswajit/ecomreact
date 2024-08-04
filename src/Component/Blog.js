@@ -8,14 +8,14 @@ export default function Blog() {
           
                         <div class="col-md-2 me-5 d-none d-md-block">
                             <div class="container pt-2">
-                                <a href="#home" class="mt-md-5 text-decoration-none "><img
-                                        src="https://wallpapercave.com/wp/wp7566270.png" alt="it's a image" srcSet=""
+                                <a href="/ecomreact/" class="mt-md-5 text-decoration-none "><img
+                                        src="https://wallpapercave.com/wp/wp7566270.png" alt="..." srcSet=""
                                         class="img-fluid rounded-5"/>All in One | Shoping</a>
                                 <a href="www.amazon.in" class="mb-5 text-decoration-none"><img
                                         src="https://www.moneycrashers.com/wp-content/uploads/2018/12/great-online-shopping-sites.jpg"
-                                        alt="it's a image" srcSet="" class="img-fluid rounded-5"/>Amazon</a>
+                                        alt="..." srcSet="" class="img-fluid rounded-5"/>Amazon</a>
                                 <a href="www.flipkart.com" class="mt-md-5 text-decoration-none"><img
-                                        src="https://wallpapercave.com/wp/wp7566456.jpg" alt="it's a image" srcSet=""
+                                        src="https://wallpapercave.com/wp/wp7566456.jpg" alt="..." srcSet=""
                                         class="img-fluid rounded-5"/>Flipkart</a>
                             </div>
                         </div>

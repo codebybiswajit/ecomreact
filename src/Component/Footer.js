@@ -1,6 +1,6 @@
 import React from 'react'
 import '../App.css'
-
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -30,19 +30,19 @@ export default function Footer() {
                         <div className="col-md-12">
                             <ul className="navbar-nav ">
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link fota">All in One | Shoping</a>
+                                    <Link href="/ecomreact/" className="nav-link fota">All in One | Shoping</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="https://www.amazon.in/" className="nav-link fota">Amazon</a>
+                                    <Link href="https://www.amazon.in/" className="nav-link fota">Amazon</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="https://www.myntra.com/" className="nav-link fota">Myntra</a>
+                                    <Link href="https://www.myntra.com/" className="nav-link fota">Myntra</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="https://www.flipkart.com/" className="nav-link fota">Flipkart</a>
+                                    <Link href="https://www.flipkart.com/" className="nav-link fota">Flipkart</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="https://www.shopsy.in/" className="nav-link fota">Shopsy</a>
+                                    <Link href="https://www.shopsy.in/" className="nav-link fota">Shopsy</Link>
                                 </li>
                             </ul>
                         </div>
@@ -60,9 +60,9 @@ export default function Footer() {
                                 <li className="nav-item"><span className="material-symbols-outlined me-3">
                                         mail
                                     </span>
-                                    <a href="mailto:freelancerbiswajit@gmail.com">
+                                    <Link href="mailto:freelancerbiswajit@gmail.com">
                                         freelancerbiswajit@gmail.com
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="nav-item"><span className="material-symbols-outlined me-3">call</span> +91
                                     1600-1498-1652
@@ -85,16 +85,16 @@ export default function Footer() {
                 </div>
                 <div className="d-flex">
                     <li className="bg-transparent bg-md-secondary text-sm-white rounded-circle  me-2 p-1">
-                        <a href="#" className="rounded"><i className='bx bxl-twitter  '></i></a>
+                        <Link to="/" className="rounded"><i className='bx bxl-twitter  '></i></Link>
                     </li>
                     <li className="bg-transparent bg-md-secondary text-sm-white rounded-circle  me-2 p-1">
-                        <a href="#"><i className='bx bxl-facebook  '></i></a>
+                        <Link to="/"><i className='bx bxl-facebook  '></i></Link>
                     </li>
                     <li className="bg-transparent bg-md-secondary text-sm-white rounded-circle  me-2 p-1">
-                        <a href="#"><i className='bx bxl-instagram  '></i></a>
+                        <Link to="/"><i className='bx bxl-instagram  '></i></Link>
                     </li>
                     <li className="bg-transparent bg-md-secondary text-sm-white rounded-circle  me-2 p-1">
-                        <a href="#"><i className='bx bxl-linkedin  '></i></a>
+                        <Link to="https://www.linkedin.com/in/biswajitmohapatra1/"><i className='bx bxl-linkedin  '></i></Link>
                     </li>
                 </div>
             </div>
