@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function BuyingPage() {
   return (
     <div>
-      <div className="container tp mt-5 bg-dark-subtle bg-gradient text-dark p-5 rounded-1">
+      <div className="container tp mt-5 bg-dark-subtle bg-gradient text-dark p-5 rounded-1 mb-3">
             <div className="row">
                 <div className="col-md-4 order-md-2 mb-4">
                     <h4 className="d-flex justify-content-between align-items-center mb-3">
