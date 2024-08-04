@@ -234,13 +234,11 @@ a{color:inherit;text-decoration:none}
 .card{
 	top: 150px;
 }
-form,.form{
+.bg-gradient{
 	transition: 0.1s ease-in-out;
 }
-form:hover{
-	transform: scale(1.02);
-}
-.form:hover{
+
+.bg-gradient:hover{
 	transform: scale(1.02);
 }
 

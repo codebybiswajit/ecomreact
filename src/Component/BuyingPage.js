@@ -143,7 +143,7 @@ export default function BuyingPage() {
                                 time</label>
                         </div>
                         <hr className="mb-4"/>
-                        <Link to="/ecomreact/buy" className="btn btn-success  text-white" type="submit">
+                        <Link to="/ecomreact/buy" className="btn btn-success  text-white me-2" type="submit">
                             Continue To Pay</Link>
                         
                         <Link to="/ecomreact/products" className="btn btn-secondary btn-outline-danger text-white" >Close
