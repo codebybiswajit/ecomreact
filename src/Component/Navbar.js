@@ -36,7 +36,7 @@ export default function Navbar() {
                                             </button>
                                             <ul className="dropdown-menu dropdown-menu-black">
                                                 <li><a className="dropdown-item" href="/ecomreact/home">Home</a></li>
-                                                <li><a className="dropdown-item" href="/ecomreact/aboutus">About Us</a></li>
+                                                <li><a className="dropdown-item" href="/ecomreact/about">About Us</a></li>
                                                 <li><a className="dropdown-item" href="/ecomreact/products">Products</a></li>
                                                 <li><a className="dropdown-item" href="/ecomreact/blog">Blogs</a></li>
                                                 <li><a className="dropdown-item" href="/ecomreact/contactus">Contacts</a></li>
@@ -157,7 +157,7 @@ export default function Navbar() {
 
                             </div>
                             <div className="d-flex justify-content-center">
-                                <a href="Assets/cart.html"><i className='bx bx-cart-add text-white fs-1 x' role="button"></i></a></div>
+                                <a href="/ecomreact/cart"><i className='bx bx-cart-add text-white fs-1 x' role="button"></i></a></div>
                         </div>
                     </nav>
 
@@ -174,9 +174,9 @@ export default function Navbar() {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
-                            <ul className='navbar-nav m-1 '>
+                            <ul className='navbar-nav m-1 d-flex align-items-center justify-content-center align-content-center'>
                                 <li>
-                                    <Link className='nav-item text-decoration-none' to='/ecomreact/home'>Home</Link>
+                                    <Link className='nav-item text-decoration-none ' to='/ecomreact/home'>Home</Link>
                                 </li>
                                 <li>
                                     <Link className='nav-item text-decoration-none' to='/ecomreact/about'>About</Link>

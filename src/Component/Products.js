@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import '../App.css'
+import { Link } from 'react-router-dom'
+// import ProductDetails from './ProductDetails'
 
 export default function Products() {
     const [products, setProducts] = useState([])
@@ -135,38 +137,31 @@ export default function Products() {
                                             <span className="visually-hidden">Loading...</span>
                                         </div></div>
                                 ) :
-
-
-                                    (
+                                (
                                         products.map((product) => {
-
                                             return <div className="row m-2 border border-dark-subtle mt-1 " id='S' key={product.id}>
                                                 <div className="col-md-3">
                                                     <img src={product.image} alt=""
                                                         className="img-fluid w-75 h-100  mt-1" />
                                                 </div>
-
                                                 <div className="col-md-6">
                                                     <div className="row">
                                                         <div className="row">
                                                             <div className="col-md-12">
-
                                                                 <h3 className="fs-2">{product.title}</h3>
                                                                 <p className="card-text">
-
                                                                     <li style={listStyle} className='text-justify'>Category : {product.category}</li>
                                                                     <li style={listStyle} className='text-justify'>{product.description}</li>
-
                                                                 </p>
                                                             </div>
                                                         </div>
                                                         <div className="row">
                                                             <div className="col-md-12 pt-2 mb-2 m-2 p-2">
-                                                                <a href="#details" className="btn btn-secondary btn-outline-info text-white me-2">View
-                                                                    Details</a>
-                                                                <a href="#addcart" className="btn btn-info btn-outline-secondary text-white me-2">Add to
-                                                                    Cart</a>
-                                                                <a href="#buy" className="btn btn-primary btn-outline-success text-white">Buy</a>
+                                                                <Link to='/ecomreact/product/productdetails' className="btn btn-secondary btn-outline-info text-white me-2">View
+                                                                    Details</Link>
+                                                                <Link to="/ecomreact/cart" className="btn btn-info btn-outline-secondary text-white me-2">Add to
+                                                                    Cart</Link>
+                                                                <Link to="/ecomreact/buyingpage" className="btn btn-primary btn-outline-success text-white">Buy</Link>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -188,7 +183,7 @@ export default function Products() {
                                                     <li className="nav-link fs-5" role="button" style={{ listStyle: "none", fontSize: "12px !important" }}> Delivery
                                                         Free</li>
                                                     <li className="nav-link fs-6" role='banner' style={{ listStyle: "none", fontSize: "10px !important" }}> <span className='rating me-1'>{product.rating.rate}<sup><i class='bx bx-star '></i></sup></span> Total rating {product.rating.count}</li>
-                                                    
+
                                                 </div>
                                             </div>
 
@@ -196,17 +191,17 @@ export default function Products() {
                             }
                             {/* <div className="col-md-12 mt-2 mb-2">
                                 <ul className="d-flex nav-underline ps-1 pe-1" style={{ listStyle: "none", transition: '5s ease' }}>
-                                    <li className="nav-item p-1 ps-2 pe-2" style={{ backgroundColor: "aliceblue" }}><a href="#"
-                                        className="nav-link text-dark">1</a></li>
-                                    <li className="nav-item"><a href="#" className="nav-link text-dark">2</a></li>
-                                    <li className="nav-item"><a href="#" className="nav-link text-dark">3</a></li>
-                                    <li className="nav-item"><a href="#" className="nav-link text-dark">4</a></li>
-                                    <li className="nav-item"><a href="#" className="nav-link text-dark">5</a></li>
-                                    <li className="nav-item"><a href="#" className="nav-link text-dark">6</a></li>
-                                    <li className="nav-item"><a href="#" className="nav-link text-dark">.</a></li>
-                                    <li className="nav-item"><a href="#" className="nav-link text-dark">.</a></li>
-                                    <li className="nav-item"><a href="#" className="nav-link text-dark">.</a></li>
-                                    <li className="nav-item"><a href="#" className="nav-link text-dark">24</a></li>
+                                    <li className="nav-item p-1 ps-2 pe-2" style={{ backgroundColor: "aliceblue" }}><Link href="#"
+                                        className="nav-link text-dark">1</Link></li>
+                                    <li className="nav-item"><Link href="#" className="nav-link text-dark">2</Link></li>
+                                    <li className="nav-item"><Link href="#" className="nav-link text-dark">3</Link></li>
+                                    <li className="nav-item"><Link href="#" className="nav-link text-dark">4</Link></li>
+                                    <li className="nav-item"><Link href="#" className="nav-link text-dark">5</Link></li>
+                                    <li className="nav-item"><Link href="#" className="nav-link text-dark">6</Link></li>
+                                    <li className="nav-item"><Link href="#" className="nav-link text-dark">.</Link></li>
+                                    <li className="nav-item"><Link href="#" className="nav-link text-dark">.</Link></li>
+                                    <li className="nav-item"><Link href="#" className="nav-link text-dark">.</Link></li>
+                                    <li className="nav-item"><Link href="#" className="nav-link text-dark">24</Link></li>
                                 </ul>
                             </div> */}
                         </div>
