@@ -16,6 +16,7 @@ import {
 } from "react-router-dom";
 import ProductDetails from './Component/ProductDetails'
 import Cart from './Component/Cart'
+import BuingMethod from './Component/BuingMethod'
 
 
 
@@ -36,6 +37,7 @@ export default function App() {
           <Route path="/ecomreact/contactus" element={<Contactus />} />
           <Route path="/ecomreact/blog" element={<Blog />} />
           <Route path="/ecomreact/cart" element={<Cart />} />
+          <Route path="/ecomreact/buy" element={<BuingMethod />} />
         </Routes>
         <Footer />
       </BrowserRouter>

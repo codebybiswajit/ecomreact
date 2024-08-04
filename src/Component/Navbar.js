@@ -157,7 +157,7 @@ export default function Navbar() {
 
                             </div>
                             <div className="d-flex justify-content-center">
-                                <a href="/ecomreact/cart"><i className='bx bx-cart-add text-white fs-1 x' role="button"></i></a></div>
+                                <Link to="/ecomreact/cart"><i className='bx bx-cart-add text-white fs-1 x' role="button"></i></Link></div>
                         </div>
                     </nav>
 

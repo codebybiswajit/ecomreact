@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function Cart() {
+    const url = 'https://th.bing.com/th/id/OIP.8QyP63oYyBti3Gf8PeBFZwHaHR?rs=1&pid=ImgDetMain'
   return (
     <div>
        <div class="container mt-5 mb-5 p-2 bg-dark-subtle bg-gradient">
@@ -15,7 +16,7 @@ export default function Cart() {
                     <div
                         class="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded card-item">
                         <div class="mr-1"><img class="rounded cart_image"
-                                src="https://th.bing.com/th/id/OIP.8QyP63oYyBti3Gf8PeBFZwHaHR?rs=1&pid=ImgDetMain"
+                                src={url}
                                 width="70" alt='item_picture'/></div>
                         <div class="d-flex flex-column align-items-center product-details"><span
                                 class="font-weight-bold">Basic T-shirt</span>

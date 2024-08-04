@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function BuyingPage() {
   return (
@@ -142,17 +143,17 @@ export default function BuyingPage() {
                                 time</label>
                         </div>
                         <hr className="mb-4"/>
-                        <a href="payment_details.html" className="btn btn-success  text-white" type="submit">
-                            Continue To Pay</a>
+                        <Link to="/ecomreact/buy" className="btn btn-success  text-white" type="submit">
+                            Continue To Pay</Link>
                         
-                        <a href="product_page.html" className="btn btn-secondary btn-outline-danger text-white" >Close
+                        <Link to="/ecomreact/products" className="btn btn-secondary btn-outline-danger text-white" >Close
 
-                        </a>
+                        </Link>
                     </form>
                 </div>
             </div>
             <h6 className="text-center mt-5"><i className='bx bxs-check-shield fs-5'></i> Safe And Secure Returns Easy
-                Returns 100% Authentic Product</h6>
+                Returns, 100% Authentic Product</h6>
         </div>
     </div>
   )
